@@ -44,6 +44,7 @@ func (e *epoll) Add(conn *websocket.Conn) error {
 
 func (e *epoll) Remove(conn *websocket.Conn) error {
 	fd := websocketFD(conn)
+	log.Printf("conn %d was removed",fd)
 	err := unix.EpollCtl(e.fd, syscall.EPOLL_CTL_DEL, fd, nil)
 	if err != nil {
 		return err

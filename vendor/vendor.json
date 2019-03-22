@@ -1,0 +1,61 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Qpm/5st1vwPGuUwxq8bNQ8/Ay20=",
+			"path": "github.com/gobwas/httphead",
+			"revision": "2c6c146eadee0b69f856f87e3e9f1d0cd6aad2f5",
+			"revisionTime": "2018-01-30T18:47:37Z"
+		},
+		{
+			"checksumSHA1": "1FX0nrj9y6EIddSDA4KQILOSKJ0=",
+			"path": "github.com/gobwas/pool",
+			"revision": "fa3125c39d7eca32e1387bb69b1b38dcb31b1e0b",
+			"revisionTime": "2018-04-24T06:07:27Z"
+		},
+		{
+			"checksumSHA1": "nu7nkfe1Q01mcduYuCMvUG3SFhs=",
+			"path": "github.com/gobwas/pool/internal/pmath",
+			"revision": "fa3125c39d7eca32e1387bb69b1b38dcb31b1e0b",
+			"revisionTime": "2018-04-24T06:07:27Z"
+		},
+		{
+			"checksumSHA1": "18BtV3gj+rFycn0AulsffnHyTQw=",
+			"path": "github.com/gobwas/pool/pbufio",
+			"revision": "fa3125c39d7eca32e1387bb69b1b38dcb31b1e0b",
+			"revisionTime": "2018-04-24T06:07:27Z"
+		},
+		{
+			"checksumSHA1": "lOiNOwclyAMiTpQsr0/NvklKlXQ=",
+			"path": "github.com/gobwas/pool/pbytes",
+			"revision": "fa3125c39d7eca32e1387bb69b1b38dcb31b1e0b",
+			"revisionTime": "2018-04-24T06:07:27Z"
+		},
+		{
+			"checksumSHA1": "j5soF3KVWnCt657diMt0+srAN+I=",
+			"path": "github.com/gobwas/ws",
+			"revision": "a6b9551e0d413ce449a620905eafdf6c273b785a",
+			"revisionTime": "2019-01-22T16:36:06Z"
+		},
+		{
+			"checksumSHA1": "etB08a1bg8obmOxLsMjGmxm493U=",
+			"path": "github.com/gobwas/ws/wsutil",
+			"revision": "a6b9551e0d413ce449a620905eafdf6c273b785a",
+			"revisionTime": "2019-01-22T16:36:06Z"
+		},
+		{
+			"checksumSHA1": "VXJdAgVeM+scYJH3UgBznkuldBA=",
+			"path": "github.com/gorilla/websocket",
+			"revision": "361d4c0ffd78338ebe0a9e6320cdbe115d7dc026",
+			"revisionTime": "2015-11-02T19:10:34Z"
+		},
+		{
+			"checksumSHA1": "lFULPHzDCUyLqXZc4Fzi7bIOsow=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "f49334f85ddcf0f08d7fb6dd7363e9e6d6b777eb",
+			"revisionTime": "2019-03-21T05:14:46Z"
+		}
+	],
+	"rootPath": "github.com/eranyanay/1m-go-websockets"
+}
