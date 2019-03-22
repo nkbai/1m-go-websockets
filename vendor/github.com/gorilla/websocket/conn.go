@@ -10,7 +10,6 @@ import (
 	"errors"
 	"io"
 	"io/ioutil"
-	"log"
 	"math/rand"
 	"net"
 	"strconv"
@@ -204,8 +203,6 @@ func (c *Conn) Subprotocol() string {
 
 // Close closes the underlying network connection without sending or waiting for a close frame.
 func (c *Conn) Close() error {
-	log.Printf("conn   closed")
-	panic("closed")
 	return c.conn.Close()
 }
 
