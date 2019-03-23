@@ -32,11 +32,11 @@ func ws(w http.ResponseWriter, r *http.Request) {
 
 	// Read messages from socket
 	for {
-		_, msg, err := conn.ReadMessage()
+		_, _, err := conn.ReadMessage()
 		if err != nil {
 			return
 		}
-		log.Printf("msg: %s", string(msg))
+		//log.Printf("msg: %s", string(msg))
 	}
 }
 

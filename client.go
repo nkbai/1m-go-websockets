@@ -51,7 +51,7 @@ Example usage: ./client -ip=172.17.0.1 -conn=10
 		for i := 0; i < len(conns); i++ {
 			time.Sleep(tts)
 			conn := conns[i]
-			log.Printf("Conn %d sending message", i)
+			//log.Printf("Conn %d sending message", i)
 			if err := conn.WriteControl(websocket.PingMessage, nil, time.Now().Add(time.Second*5)); err != nil {
 				fmt.Printf("Failed to receive pong: %v", err)
 			}
