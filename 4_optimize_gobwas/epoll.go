@@ -51,6 +51,7 @@ func (e *epoll) Remove(conn net.Conn) error {
 	}
 	e.lock.Lock()
 	defer e.lock.Unlock()
+	conn.Close()
 	delete(e.connections, fd)
 	if len(e.connections)%100 == 0 {
 		log.Printf("Total number of connections: %v", len(e.connections))

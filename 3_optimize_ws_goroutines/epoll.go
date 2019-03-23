@@ -4,6 +4,7 @@ import (
 	"github.com/gorilla/websocket"
 	"golang.org/x/sys/unix"
 	"log"
+	"net"
 	"reflect"
 	"sync"
 	"syscall"
@@ -51,6 +52,7 @@ func (e *epoll) Remove(conn *websocket.Conn) error {
 	}
 	e.lock.Lock()
 	defer e.lock.Unlock()
+	//conn.Close() //没有close,会导致大量的内存泄漏
 	delete(e.connections, fd)
 	if len(e.connections)%100 == 0 {
 		log.Printf("Total number of connections: %v", len(e.connections))
