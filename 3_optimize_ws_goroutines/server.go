@@ -67,13 +67,13 @@ func Start() {
 			if conn == nil {
 				break
 			}
-			_, msg, err := conn.ReadMessage()
+			_, _, err := conn.ReadMessage()
 			if err != nil {
 				if err := epoller.Remove(conn); err != nil {
 					log.Printf("Failed to remove %v", err)
 				}
 			} else {
-				log.Printf("msg: %s", string(msg))
+				//log.Printf("msg: %s", string(msg))
 			}
 		}
 	}
